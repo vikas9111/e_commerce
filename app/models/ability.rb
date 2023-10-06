@@ -11,6 +11,7 @@ class Ability
     if user.seller?
       seller_ability
     end
+
     if user.customer?
       customer_ability
     end
