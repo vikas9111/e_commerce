@@ -6,5 +6,8 @@ class User < ApplicationRecord
          :confirmable, :lockable, :timeoutable, :trackable
   has_one :cart
 
+  enum role: { admin: 1, seller: 2, customer: 3 }
+
   after_create :create_cart
+ 
 end

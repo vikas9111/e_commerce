@@ -76,3 +76,7 @@ end
 gem "cssbundling-rails", "~> 1.2"
 
 gem "jsbundling-rails", "~> 1.1"
+
+gem "cancancan", "~> 3.5"
+
+gem "byebug", "~> 11.1"
