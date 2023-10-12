@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Attribute definitions</h3>
+  <%= link_to "New attribute definition", new_attribute_definition_path, class: 'btn btn-success mb-3 mt-3' %>
+  <div class="row d-flex justify-content-center align-items-center">
+    <div id="attribute_definitions">
+      <table class="table table-striped">
+        <th>Name</th>
+        <th></th>
+        <% @attribute_definitions.each do |attribute_definition| %>
+          <tr>
+            <td><%= attribute_definition.name %></td>
+            <td>
+              <%= link_to "Edit", edit_attribute_definition_path(attribute_definition) %>
+              <%= link_to "Delete", attribute_definition, data: { "turbo-method": :delete } %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

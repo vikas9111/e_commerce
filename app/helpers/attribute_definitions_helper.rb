@@ -1,0 +1,2 @@
+module AttributeDefinitionsHelper
+end

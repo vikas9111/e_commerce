@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :attribute_definitions, except: [:show]
   resources :products
   resources :categories
   devise_for :users
